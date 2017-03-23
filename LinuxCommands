@@ -36,3 +36,8 @@ Command (m for help): w
 sudo mkfs.vfat /dev/sdc1
 and then remove and re-insert the drive. It should be cleanly formatted.
 ============================================================================================================
+//CREATE A BOOTABLE USB USING DD
+==============================
+sudo umount /dev/sdb
+sudo dd if=/path/to/ubuntu.iso of=/dev/sdb bs=1M
+=============================================================================================================
